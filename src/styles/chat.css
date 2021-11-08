@@ -1,0 +1,7 @@
+
+.chat-tarjeta-principal{
+    height: 700px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+}

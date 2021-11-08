@@ -1,0 +1,28 @@
+html,body, #app, #app>div{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    background-color: #FFECCC;
+}
+
+.contenido-principal{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.padding-0-margin-0{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.columna-chat{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}

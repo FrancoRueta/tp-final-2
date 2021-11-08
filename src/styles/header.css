@@ -1,0 +1,25 @@
+.header-titulo{
+    font-family: 'Righteous',cursive;
+    font-size:66px;
+    padding-left:18px;
+    padding-right:18px;
+    color:white;
+    display: flex;
+    justify-content: center;
+}
+.header-isotipo{
+    width: 100px;
+    height:100px;
+
+}
+
+
+.header-container{
+    background-color: #27AFA7;
+    display:inline-flex;
+    padding-left:0px;
+    padding-right:0px;
+    width:100%;
+    justify-content:center;
+    height:100px;
+}
