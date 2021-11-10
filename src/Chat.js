@@ -32,7 +32,7 @@ const Chat = () => {
     //funcion que se encarga de generar la respuesta del bot
     const generarRespuestaDelBot = (mensajeUsuario) => {
         //la url de la API.
-        const botUrl = `https://api.brainshop.ai/get?bid=161003&key=XWultLaoaGjbh1ZQ&uid=5050&msg=${mensajeUsuario}`;
+        const botUrl = `http://api.brainshop.ai/get?bid=161003&key=XWultLaoaGjbh1ZQ&uid=5050&msg=${mensajeUsuario}`;
 
         fetch(botUrl)
             .then(respuesta => respuesta.json())
