@@ -1,11 +1,12 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import Header from './Header';
 import Chat from './Chat';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 import './styles/app.css'
 
 function App() {
+
   return (
     <Container fluid>
       <Row>  
@@ -14,9 +15,7 @@ function App() {
         />
       </Row>
       <Row>
-        <Col className="columna-chat">
-          <Chat/>
-        </Col>
+        <Chat/>
       </Row>
     </Container>
   );
