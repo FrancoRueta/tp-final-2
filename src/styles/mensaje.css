@@ -1,0 +1,29 @@
+.chatbox-green{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    background-color: #AFD1A9;
+    height: 56px;
+    width: 100%;
+    list-style-type: none;
+    padding-top: 18px;
+    border: #719e69 solid 1px;
+    border-radius: 6px;
+    margin: 1px;
+}
+
+
+.chatbox-lightblue{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #000;
+    background-color: #C3E4E2;
+    height: 56px;
+    width: 100%;
+    list-style-type: none;
+    padding-top: 18px;
+    border: #8fc4c0 solid 1px;
+    margin: 1px;
+}

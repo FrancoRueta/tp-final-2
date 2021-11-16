@@ -6,7 +6,7 @@ import Mensaje from './Mensaje';
 const Chat = () => {
 
 
-    //definimos el state que se va a encargar de almacenar los mensajes
+    //definimos el state que se va a encargar de almacenar todos los mensajes
     const [mensajesDelChat, setMensajesDelChat] = React.useState([
     ]);
 
@@ -20,32 +20,26 @@ const Chat = () => {
         setMensaje(event.target.value);
     }
 
+    //funcion que se encarga de generar la respuesta del bot
+    const generarRespuestaDelBot = () => {
+        setMensajesDelChat([...mensajesDelChat, 'BOT: hola, tristemente hubo un problema con la api... pero aqui estoy! :)']);
+    }
+
 
     //funcion que se encarga de agregar un mensaje al chat
     const agregarMensajeAlChat = (event) => {
         event.preventDefault();
         setMensajesDelChat([...mensajesDelChat, mensaje]);
-        generarRespuestaDelBot(mensaje);
         setMensaje('');
     }
 
-    //funcion que se encarga de generar la respuesta del bot
-    const generarRespuestaDelBot = (mensajeUsuario) => {
-        //la url de la API.
-        const botUrl = `http://api.brainshop.ai/get?bid=161003&key=XWultLaoaGjbh1ZQ&uid=5050&msg=${mensajeUsuario}`;
-
-        fetch(botUrl)
-            .then(respuesta => respuesta.json())
-            .then(data => {
-                setMensajesDelChat([...mensajesDelChat, data.cnt]);
-            })
-    }
+    
     
 
     return ( 
         <Col className="chat-tarjeta-principal">
-            <Row>
-                <ul>
+            <Row className="chat-row">
+                <ul className="no-padding-left">
                     {
                         mensajesDelChat.map((mensaje) => (
                             <Mensaje
@@ -59,17 +53,16 @@ const Chat = () => {
             
 
             <Row className="chat-input">
+                <input
+                    type='text'
+                    name='mensajeActual'
+                    className='chat-input-text'
+                    placeholder='Pruebe diciendo: hello! how are you?'
+                    onChange={actualizarMensajeActual}
+                    value={mensaje}
+                />
 
-                    <input
-                        type='text'
-                        name='mensajeActual'
-                        className='chat-input-text'
-                        placeholder='Pruebe diciendo: hello! how are you?'
-                        onChange={actualizarMensajeActual}
-                        value={mensaje}
-                    />
-
-                    <button type="submit" onClick={agregarMensajeAlChat} className="chat-input-button"> Enviar </button>
+                <button type="submit" onClick={agregarMensajeAlChat} className="chat-input-button"> Enviar </button>
             </Row>
         </Col>
         );

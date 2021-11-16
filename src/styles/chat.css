@@ -54,3 +54,17 @@
     align-self: flex-end;
     justify-content: center;
 }
+
+.no-padding-left{
+    padding-left:0;
+    width: 100%;
+}
+
+.chat-row{
+    padding-top: 28px;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
