@@ -1,4 +1,4 @@
-.chatbox-green{
+.verde{
     display: flex;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -11,10 +11,11 @@
     border: #719e69 solid 1px;
     border-radius: 6px;
     margin: 1px;
+    padding-left: 8px;
 }
 
 
-.chatbox-lightblue{
+.celeste{
     display: flex;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -25,5 +26,7 @@
     list-style-type: none;
     padding-top: 18px;
     border: #8fc4c0 solid 1px;
+    border-radius: 6px;
     margin: 1px;
+    padding-left: 8px;
 }
