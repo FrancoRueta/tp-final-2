@@ -1,5 +1,5 @@
 import React from 'react';
-import {Col } from 'react-bootstrap';
+import {Col} from 'react-bootstrap';
 import bird from './utils/Bird.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/header.css';

@@ -1,13 +1,15 @@
 .verde{
-    display: flex;
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-weight: 500;
+    font-style: italic;
+    display: flex;
+    font-size: 20px;
     color: #fff;
     background-color: #AFD1A9;
     height: 56px;
     width: 100%;
     list-style-type: none;
-    padding-top: 18px;
+    padding-top: 12px;
     border: #719e69 solid 1px;
     border-radius: 6px;
     margin: 1px;
@@ -16,15 +18,17 @@
 
 
 .celeste{
-    display: flex;
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-weight: 500;
+    font-style: italic;
+    display: flex;
+    font-size: 20px;
     color: #000;
     background-color: #C3E4E2;
     height: 56px;
     width: 100%;
     list-style-type: none;
-    padding-top: 18px;
+    padding-top: 12px;
     border: #8fc4c0 solid 1px;
     border-radius: 6px;
     margin: 1px;

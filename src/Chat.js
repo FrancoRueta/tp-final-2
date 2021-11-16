@@ -52,7 +52,7 @@ const Chat = () => {
                         mensajesDelChat.map((mensaje) => (
                             <Fragment>
                                 <Mensaje
-                                    mensaje={mensaje}
+                                    mensaje={'TU: '+mensaje}
                                     color={"celeste"}
                                 />
                                 <Mensaje
