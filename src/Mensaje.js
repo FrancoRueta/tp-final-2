@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Mensaje = ({mensaje, color}) => {
     return ( 
-        <li className={color}>{mensaje} {console.log(mensaje)}</li>
+        <li className={color}>{mensaje}</li>
      );
 }
  

@@ -24,8 +24,15 @@ const Chat = () => {
     //funcion que se encarga de agregar un mensaje al chat
     const agregarMensajeAlChat = (event) => {
         event.preventDefault();
-        setMensajesDelChat([...mensajesDelChat, mensaje]);
-        setMensaje('');
+        if(mensajesDelChat.length >= 3){
+            setMensajesDelChat([mensaje]);
+            setMensaje('');
+        }
+        else{
+            setMensajesDelChat([...mensajesDelChat, mensaje]);
+            setMensaje('');
+        }
+        
     }
 
     //funcion que se encarga de generar la respuesta del bot
