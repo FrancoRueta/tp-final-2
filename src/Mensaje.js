@@ -2,9 +2,9 @@ import React from 'react';
 import './styles/mensaje.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Mensaje = ({mensaje, color}) => {
+const Mensaje = ({mensaje}) => {
     return ( 
-        <li className={color}>{mensaje} {console.log(mensaje)}</li>
+        <li className="celeste">TU: {mensaje}</li>
      );
 }
  

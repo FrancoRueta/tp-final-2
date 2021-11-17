@@ -2,10 +2,11 @@ import React, {Fragment} from 'react';
 import { Row, Col } from 'react-bootstrap';
 import './styles/chat.css'
 import Mensaje from './Mensaje';
+import Respuesta from './Respuesta';
 
 const Chat = () => {
 
-
+    
     //definimos el state que se va a encargar de almacenar todos los mensajes
     const [mensajesDelChat, setMensajesDelChat] = React.useState([
     ]);
@@ -28,22 +29,6 @@ const Chat = () => {
         setMensaje('');
     }
 
-    //funcion que se encarga de generar la respuesta del bot
-    const generarRespuestaDelBot = (mensajeUsuario) => {
-        //la url de la API.
-        /*
-        const botUrl = `http://api.brainshop.ai/get?bid=161003&key=XWultLaoaGjbh1ZQ&uid=5050&msg=${mensajeUsuario}`;
-
-        fetch(botUrl)
-            .then(respuesta => respuesta.json())
-            .then(data => {
-                setMensajesDelChat([...mensajesDelChat, data.cnt]);
-            })*/
-        setTimeout(1000);
-        return 'BOT: hola, tristemente hubo un problema con la api... pero aqui estoy! :)';
-    }
-    
-
     return ( 
         <Col className="chat-tarjeta-principal">
             <Row className="chat-row">
@@ -52,12 +37,10 @@ const Chat = () => {
                         mensajesDelChat.map((mensaje) => (
                             <Fragment>
                                 <Mensaje
-                                    mensaje={'TU: '+mensaje}
-                                    color={"celeste"}
+                                    mensaje={mensaje}
                                 />
-                                <Mensaje
-                                    mensaje={generarRespuestaDelBot(mensaje)}
-                                    color={"verde"}
+                                <Respuesta
+                                    mensaje={mensaje}
                                 />
                             </Fragment>
                         ))
